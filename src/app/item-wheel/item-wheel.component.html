@@ -1,0 +1,16 @@
+<div class="item-wheel-container row" id="item-wheel">
+  <h3 class="mx-auto">Featured Items</h3>
+  
+  <div class="wheel-container col-12">
+    
+    <!-- Start item iterations -->
+    <div class="items" *ngFor="let item of items">
+        <img class="item-image" src="{{item.imageLocation}}" alt="{{item.itemName}}">
+        <p class="item-name">{{item.itemName}}<br>
+           <span class="item-cost">${{item.cost}}</span></p>
+    </div>
+
+  </div>
+
+  <p class="mx-auto">To see more of our products, please come in!</p>
+</div>
